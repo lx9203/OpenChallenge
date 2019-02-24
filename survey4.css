@@ -1,0 +1,24 @@
+@import url(4.css);
+
+h2{
+	margin-left : 200px;
+	color: darkred;
+}
+p {
+	margin-left : 20px;
+}
+table {
+	background : pink;
+	border-style : none;
+	border-width : 1px;
+	margin-left : 10px;
+	margin-right : 10px;
+}
+strong {
+	color : blue;
+}
+
+footer {
+border-radius: 10px;
+background:    orange;
+}

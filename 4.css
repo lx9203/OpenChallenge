@@ -1,0 +1,57 @@
+body {
+  font-family: "휴먼편지체";
+background:    aliceblue;
+}
+h1 {
+font-family: "휴먼편지체";
+color : brown;
+text-align : center;
+}
+h2 {
+font-family: "휴먼편지체";
+text-shadow: 3px 3px 5px skyblue;
+color:       blue;
+}
+h3 {
+font-family: "휴먼편지체";
+text-shadow: 3px 3px 5px skyblue;
+color:       green;
+}
+h4 {
+font-family: "휴먼편지체";
+text-shadow: 3px 3px 5px skyblue;
+p {
+  font-family: "휴먼편지체"; columns:
+  font-size:   1em;
+  text-indent: 1em;
+}
+a  {
+text-decoration : none;
+}
+header {
+font-family:         "휴먼편지체";
+border-bottom-style: solid;
+border-bottom-width: 1px;
+}
+nav > ul {
+border-style : dotted;
+border-width : 1px;
+}
+footer {
+border-radius: 10px;
+background:    orange;
+}
+a:link {
+  color:         green;
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+color:           pink;
+text-decoration: none;
+}
+hr {
+  border-width: 1px;
+}
