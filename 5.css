@@ -1,0 +1,74 @@
+body {
+height: 100%;
+background : orange;
+font-family : "휴먼편지체";
+margin: 0;
+}
+
+h1 {
+margin: 0;
+color : brown;
+text-align : center;
+}
+
+h2 {
+color : blue;
+text-shadow : 3px 3px 5px skyblue;
+}
+
+h3 {
+color : green;
+text-shadow : 3px 3px 5px skyblue;
+}
+
+h4 {
+text-shadow : 3px 3px 5px skyblue;}
+
+
+a {
+text-decoration : none;
+}
+
+.header {
+  background: Yellow;
+  height: 15%;
+  width: 100%;
+  margin: 0;
+  border:0;
+}
+
+.nav {
+  display: inline-block;
+  float: left;
+  height: 70%;
+  width: 20%
+}
+
+.section {
+  background: skyblue;
+  display: inline-block;
+  float: left;
+  height: 70%;
+  width: 80%;
+}
+
+.footer {
+background : purple;
+border-radius : 10px;
+clear: both;
+height: 15%;
+width: 100%;
+}
+
+a { color: green;
+  text-decoration: none;
+}
+
+a:hover {
+color: pink;
+text-decoration: none;
+}
+
+#center {
+  text-align: center;
+}
