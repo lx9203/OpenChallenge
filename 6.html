@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>
+    별표시하기
+  </h3>
+  <hr>
+
+  <script type="text/javascript">
+    var n = prompt("입력하세요.");
+    n = parseInt(n);
+    if(isNaN(n)) {
+      document.write("숫자가 아닙니다.");
+      }
+    else{
+        for(i=1; i <= n; i++) {
+          for(k=1; k <= i; k++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+        for (i=0; i < n; i++){45
+            for (m=0; m < n; m++){
+              if(m<i+1){
+                document.write("&nbsp;");
+              }
+              else {
+                document.write("*");
+              }
+
+            }
+          document.write("<br>");
+        }
+    }
+
+  </script>
+</body>
+</html>
