@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+    function total() {
+      var idObj = document.getElementById('id');
+      var pwObj = document.getElementById('pw');
+      var pw2Obj = document.getElementById('pw2');
+      var emailObj = document.getElementById('email');
+      var phoneObj = document.getElementById('phone');
+      // -----------------------------------------------------
+      var msg = "";
+
+      var id = idObj.value;
+      var idc = /^[A-za-z]{5,15}/; //아이디
+
+      var pw = pwObj.value;
+      var pwc = /^.*(?=^.{6,20}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+
+      var pw2 = pw2Obj.value;
+
+      var email = emailObj.value;
+      var emc = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+      var phone = phoneObj.value;
+      var phonec = /^\d{3}-\d{3,4}-\d{4}$/;
+      // -----------------------------------------------------
+      if(!idc.test(id))
+        msg += "아이디는 5~15자의 영문 대소문자와 숫자로만 입력\n";
+      else
+        msg += "ID 생성 가능\n";
+
+
+      if(!pwc.test(pw))
+        msg += "패스워드 형식 오류 / 패스워드는 6~20자의 영문 대소문자, 특수문자, 숫자로 입력\n";
+      else
+        msg += "패스워드 생성 가능\n"; // 패스워드 체크
+
+      if(pw !=pw2)    //  패스워드 확인 -------------------------------
+        msg += "패스워드가 다릅니다\n";
+      else
+        msg += "패스워드가 같습니다\n";
+
+      if(!emc.test(email))
+        msg += "이메일 형식 오류 / 적합하지 않은 이메일 형식입니다. \n";
+      else
+        msg += "이메일 등록 가능\n";
+
+      if(!phonec.test(phone))
+        msg += "전화번호 형식 오류 / 적합하지 않은 이메일 형식입니다. \n";
+      else
+        msg += "전화번호 등록 가능\n";
+
+      alert(msg);
+    }
+  </script>
+</head>
+<body>
+  <h3>회원가입창 만들기</h3>
+  <hr>
+  <fieldset >
+
+
+      <table>
+        <legend>회원 가입</legend>
+        <tr>
+          <td colspan="1">로그인 ID : </td><td colspan="2"><input id="id" type="text" name="ID"></td>
+        </tr>
+          <br>
+        <tr>
+          <td colspan="1">패스워드 : </td><td colspan="2"><input id="pw" type="password" name="PW"></td>
+        </tr>
+        <tr>
+          <td colspan="1">패스워드 확인 : </td><td colspan="2"><input id="pw2" type="password" name="PW"></td>
+        </tr>
+        <tr>
+          <td colspan="1">이메일 : </td><td colspan="2"><input id="email" type="email" name="EMail" value=""></td>
+        </tr>
+        <tr>
+          <td colspan="1">전화번호 : </td><td colspan="2"><input id="phone" type="tel" name="tel" value=""></td>
+        </tr>
+        <tr><td colspan="2">
+          <button onclick="total()">회원가입</button>
+        </td></tr>
+      </table>
+      <br>
+
+
+  </fieldset>
+</body>
+</html>
